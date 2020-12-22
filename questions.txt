@@ -17,7 +17,6 @@ Q2. What is the value of clothes[0]:
 
 const clothes = ['jacket', 't-shirt'];
 clothes.length = 0;
-
 console.log(clothes[0]);  => ?????
 
 Answer: 
