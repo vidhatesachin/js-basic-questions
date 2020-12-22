@@ -75,12 +75,13 @@ age: 23
 
 Q6. What will be the output of the following code?
 
-var Employee =
+var employee =
 {
 company: 'xyz'
 }
 var Emp1 = Object.create(employee);
-delete Emp1.company Console.log(emp1.company);
+delete Emp1.company;
+console.log(employee.company);
 
 Answer: The output would be xyz. Here, emp1 object has company as its prototype property. The delete operator doesn’t delete prototype property. emp1 object doesn’t 
 have company as its own property. However, we can delete the company property directly from the Employee object using delete Employee.company.
