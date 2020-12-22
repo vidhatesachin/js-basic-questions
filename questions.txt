@@ -73,20 +73,6 @@ age: 23
 
 =======================================================================================================
 
-Q5. What will be the output of the code below?
-
-var Y = 1;
-if (function F(){})
-{
-y += Typeof F;</span>
-}
-console.log(y);
-
-
-Answer: The output would be 1undefined. The if condition statement evaluates using eval, so eval(function f(){}) returns function f(){} (which is true). Therefore, inside the if statement, executing typeof f returns undefined because the if statement code executes at run time, and the statement inside the if condition is evaluated during run time.
-
-=======================================================================================================
-
 Q6. What will be the output of the following code?
 
 var Employee =
@@ -96,7 +82,8 @@ company: 'xyz'
 var Emp1 = Object.create(employee);
 delete Emp1.company Console.log(emp1.company);
 
-Answer: The output would be xyz. Here, emp1 object has company as its prototype property. The delete operator doesn’t delete prototype property. emp1 object doesn’t have company as its own property. However, we can delete the company property directly from the Employee object using delete Employee.company.
+Answer: The output would be xyz. Here, emp1 object has company as its prototype property. The delete operator doesn’t delete prototype property. emp1 object doesn’t 
+have company as its own property. However, we can delete the company property directly from the Employee object using delete Employee.company.
 
 
 
